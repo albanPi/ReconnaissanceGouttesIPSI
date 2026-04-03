@@ -14,3 +14,6 @@ HC2 : 2_259
 HC3 : 159
 HC4 : 5_100
 HC5 : 161
+
+Arbre décisionnel
+Matrice de confusion
