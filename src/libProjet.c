@@ -7,7 +7,7 @@
 #include <string.h>
 #include <math.h>
 
-#include "libCIPSI1.h"
+#include "libProjet.h"
 
 /* static -> non extern */
 
