@@ -1,0 +1,16 @@
+HC1 : que des petites gouttes très circulaires, elles sont éparpillées, on peut mettre une limite de surface, beaucoup de composantes connexes
+HC2 : différences conséquentes de surfaces entre grosses gouttes et petites gouttes, impureté dans certaines gouttes
+HC3 : gouttes moins circulaires, gouttes non transparentes
+HC4 : gouttes plus grosses, gouttes plus étendues, reste des gouttes petites, goutte long au niveau du bord
+HC5 : idem que 4 mais les gouttes plus grandes et se rejoignent (= surface plus étendue)
+HC6 : Une grosse goutte avec plusieurs trous dedans
+HC7 : Une grosse goutte mais avec très peu de trous, goutte recouvre toute la moitié dans certains cas, reflet du tronc où passe 
+
+HC2 = HC2 + HC3
+HC4 = HC5 + HC6
+
+HC1 : 495
+HC2 : 2_259
+HC3 : 159
+HC4 : 5_100
+HC5 : 161
