@@ -1500,3 +1500,14 @@ IMAGE normeGradientImage(IMAGE img)
 
 	return(out);
 }
+
+IMAGE RoiImage(IMAGE img, int dx, int dy) {
+	IMAGE out = { 0,0,NULL,NULL };
+	out = allocationImage(img.Nblig - 2 * dy, img.Nbcol - 2 * dx);
+
+	for (int i = dy - 1; i < img.Nblig - dy; i++) {
+		for (int j = dy - 1; j < img.Nbcol - dx; j++) {
+			
+		}
+	}
+}
