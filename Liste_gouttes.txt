@@ -17,3 +17,5 @@ HC5 : 161
 
 Arbre décisionnel
 Matrice de confusion
+Discriminer par la surface, la rondeur, le nombre de composantes connexes
+ATTENTION AU DEPASSEMENT DU TYPE UNSIGNED CHAR

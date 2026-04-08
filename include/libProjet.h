@@ -100,3 +100,5 @@ float  indiceIoUImage(IMAGE BW1, IMAGE BW2);
 IMAGERGB comparaisonImage(IMAGE BW1, IMAGE BW2);
 
 IMAGE normeGradientImage(IMAGE img);
+
+IMAGE RoiImage(IMAGE img, int dx, int dy);

@@ -1508,7 +1508,9 @@ IMAGE RoiImage(IMAGE img, int dx, int dy) {
 	for (int i = dy - 1; i < img.Nblig - dy; i++) {
 		for (int j = dy - 1; j < img.Nbcol - dx; j++) {
 			out.pixel[i][j] = img.pixel[i][j];
-			out.data[i * (img.Nbcol - dx) + j] = img.data[i$(img.Nbcol - dx) + j];
+			out.data[i * (img.Nbcol - dx) + j] = img.data[i*(img.Nbcol - dx) + j];
 		}
 	}
+
+	return out;
 }
