@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="ReconnaissanceGouttes/ReconnaissanceGouttes.vcxproj" />
+  <Project Path="ReconnaissanceGouttes/ReconnaissanceGouttes.vcxproj" Id="1cbf3396-8868-4e27-9a89-9fe5da303812" />
 </Solution>
