@@ -1503,12 +1503,12 @@ IMAGE normeGradientImage(IMAGE img)
 
 IMAGE RoiImage(IMAGE img, int dx, int dy) {
 	IMAGE out = { 0,0,NULL,NULL };
-	out = allocationImage(img.Nblig - 2 * dy, img.Nbcol - 2 * dx);
+	out = allocationImage(img.Nblig - (2 * dy), img.Nbcol - (2 * dx));
 
-	for (int i = dy - 1; i < img.Nblig - dy; i++) {
-		for (int j = dy - 1; j < img.Nbcol - dx; j++) {
-			out.pixel[i][j] = img.pixel[i][j];
-			out.data[i * (img.Nbcol - dx) + j] = img.data[i*(img.Nbcol - dx) + j];
+	for (int i = 0; i < img.Nblig - (2*dy); i++) {
+		for (int j = 0; j < img.Nbcol - (2*dx); j++) {
+			out.pixel[i][j] = img.pixel[i+dy][j+dx];
+			out.data[i * out.Nbcol + j] = out.pixel[i][j];
 		}
 	}
 

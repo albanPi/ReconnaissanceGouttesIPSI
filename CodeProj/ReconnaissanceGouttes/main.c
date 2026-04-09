@@ -7,20 +7,24 @@
 
 void main(void)
 {
-	FILE* F = NULL;
-	char gt[] = "Data\\test_JPG\\";
-	char images[] = "Data\\test_ppm\\";
+	//FILE* F = NULL;
+	//char gt[] = "Data\\test_JPG\\";
+	//char images[] = "Data\\test_ppm\\";
 
 
 
 	// listing images pgm/ppm dans un fichier
 	//system("dir /S /B Database\\GT\\*.p*m > listeDesImages.txt");
 
-	system("dir /S /B Data");
 
-	IMAGE img = lectureImage("test_ppm\\HC1\\HC1_1.ppm");
-	IMAGE img_roi = RoiImage(img, 50, 0);
-	sauvegardeImage(img_roi, "P6", "res\\test.ppm");
+	IMAGERGB imgrgb = lectureImageRGB("test_ppm\\HC1\\HC1_1.ppm");
+	IMAGE img = luminanceImage(imgrgb, 0.2125, 0.7154, 0.0721);
+	IMAGE img_roi = RoiImage(img, 0, 50);
+	sauvegardeImage(img_roi, "P2", "res\\test.pgm");
+
+	liberationImageRGB(&imgrgb);
+	liberationImage(&img);
+	liberationImage(&img_roi);
 
 
 
